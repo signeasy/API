@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <script src="{{url_for('static', filename='js/constants.js')}}"></script>
+  <script src="{{url_for('static', filename='js/home.js')}}"></script>
+  <script src="{{url_for('static', filename='js/networking.js')}}"></script>
+  <script src="{{url_for('static', filename='js/user.js')}}"></script>
+  <div class="jumbo">
+    <h2>Welcome to Himalaya Doc Writer<h2>
+    <h3>Your all season Document solution!<h3>
+    <h4 id="fieldUsername">You are not logged in<h4>
+    <div>
+        <button id="loginButton" onCLick="HomeModule.onLoginCLicked()" type="button">App Login</button>
+        <button id="logoutButton" onCLick="HomeModule.onLogoutClicked()" type="button" disabled="true">Logout</button>
+    </div>
+    <object id='documentView' class='documentView' data="{{url_for('static', filename='doc/form4.pdf')}}" type="application/pdf" width="500" height="600" style="visibility:hidden">
+      <a id= "fileDisplay" href="{{url_for('static', filename='doc/form4.pdf')}}">form4.pdf</a>
+    </object>
+    <div class="testSuite">
+    <button id="openInWebapp" onCLick="HomeModule.onSignWithSignEasyClicked()" type="button" style="visibility:hidden">Sign With SignEasy</button>
+    </div>
+  </div>
+  <!-- The Modal -->
+<div id="genericModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="HomeModule.closeModal()">&times;</span>
+    <p id= "modalMessage">Some text in the Modal..</p>
+    <button id="modalButton" type="button">Modal Button</button>
+  </div>
+</div>
+
+<div id="genericInputModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="HomeModule.closeModal()">&times;</span>
+    <p id= "modalInputMessage">Some text in the Modal..</p>
+    <form onsubmit="return HomeModule.submitHandler()">
+        <input type="text" name="inputText">
+    </form>
+    <button id="modalInputButton" type="button">Modal Button</button>
+  </div>
+</div>
+<script>
+</script>
+{% endblock %}

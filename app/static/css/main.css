@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+/*
+ * Create dark grey header with a white logo
+ */
+
+header {
+  background-color: #2B2B2B;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  float: left;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Center the body content
+ */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+div.jumbo {
+  padding: 10px 0 30px 0;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 25px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+h4 {
+  font-size: 1.0em;
+  margin-top: 25px;
+  text-align: center;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:disabled,
+button[disabled]{
+    background-color: #777777; /*Gray*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.documentView {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
