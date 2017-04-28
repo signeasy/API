@@ -1,6 +1,6 @@
 var ConstantModule = (function(){
     var AUTH_HOST = "https://rest-beta.getsigneasy.com";//SignEasy API host
-    var APP_HOST = "http://localhost:8282";//Your app host
+    var APP_HOST = "https://himalaya.getsigneasy.com";//Your app host
     var AUTH_AUTHORIZE = "/oauth2/authorize";
     var AUTH_TOKEN = "/oauth2/token";
     var CLIENT_ID = "";//Add your client ID;
