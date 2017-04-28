@@ -124,7 +124,7 @@ var HomeModule = (function() {
 
     function getAllPendingFiles(){
         var urlPending = ConstantModule.getPendingFilesUrl();
-        NetworkingModule.getv4(urlPending,function(resp,err){
+        NetworkingModule.get1(urlPending,function(resp,err){
             if(!err){
                 console.log(resp);
             } else {
@@ -165,7 +165,7 @@ var HomeModule = (function() {
 
     function uploadFileRequest(fileName){
         var urlOriginal = ConstantModule.getUploadFilesUrl();
-        NetworkingModule.postMultipartv4(urlOriginal,function(resp,err){
+        NetworkingModule.postMultipartv1(urlOriginal,function(resp,err){
             if(!err){
                 console.log(resp);
                 var uploadResp = JSON.parse(resp);
@@ -241,7 +241,7 @@ var HomeModule = (function() {
             popWindow.onload = function () {
                 popWindow.document.write('Loading preview...');
             };
-            NetworkingModule.postv4(ConstantModule.getSigningUrl(),function(resp,err){
+            NetworkingModule.postv1(ConstantModule.getSigningUrl(),function(resp,err){
                 if(!err){
                     var signingResp = JSON.parse(resp);
                     console.log(signingResp.url);

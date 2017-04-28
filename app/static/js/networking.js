@@ -25,7 +25,7 @@ var NetworkingModule = (function(){
         http.send(params);
     }
 
-    function getv4(inUrl, callback, caller) {
+    function getv1(inUrl, callback, caller) {
         var http = new XMLHttpRequest();
         http.onreadystatechange = function() {
             if(http.readyState == 4){
@@ -45,7 +45,7 @@ var NetworkingModule = (function(){
         http.send(null);
     }
 
-    function postv4(inUrl, callback, caller, params) {
+    function postv1(inUrl, callback, caller, params) {
         var http = new XMLHttpRequest();
         var url = inUrl;
         console.log(url);
@@ -72,7 +72,7 @@ var NetworkingModule = (function(){
         http.send(params);
     }
 
-    function postMultipartv4(inUrl, callback, caller,fileName) {
+    function postMultipartv1(inUrl, callback, caller,fileName) {
         var http = new XMLHttpRequest();
         var url = inUrl;
         var params_name = "name=";
@@ -123,9 +123,9 @@ var NetworkingModule = (function(){
 
     return {
         'post' : post,
-        'getv4': getv4,
-        'postMultipartv4' : postMultipartv4,
-        'postv4': postv4
+        'getv1': getv1,
+        'postMultipartv1' : postMultipartv1,
+        'postv1': postv1
     };
 
 })();
