@@ -23,7 +23,7 @@ var HomeModule = (function() {
 
     function onSignWithSignEasyClicked(){
         if(!hasSession()){
-            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,500);
+            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,700);
         } else {
             if(ConstantModule.getAuthCode() && !hasSession()){
                 getAccessToken();
@@ -44,13 +44,13 @@ var HomeModule = (function() {
         if(UserModule.getAccessToken()) {
             getAllPendingFiles();
         } else {
-            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,500);//!window.open(URL_AUTHORIZE, 'Authorize', 'width=500,height=500');
+            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,700);
         }
     }
 
     function onSELoginButtonClicked(){
         if(!UserModule.getAccessToken()) {
-            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,500);//!window.open(URL_AUTHORIZE, 'Authorize', 'width=500,height=500');
+            return popupCenter(ConstantModule.URL_AUTHORIZE,'Authorize',500,700);
         }
     }
 
