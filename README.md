@@ -1,13 +1,14 @@
-## Synopsis
+## Introduction
 
-Himalaya Doc Writer app is a simple app that displays a document and allows the user to sign using SignEasy API.
+Himalaya Doc Writer is a simple app to showcase the capabilities of SignEasy API platform. The app displays a document and allows a user to sign or request signatures using the SignEasy API.
 
-## Motivation
+The app showcases document import and document signing capability via the SignEasy web platform. 
 
-Creating a client web app would help build the API platform keeping the customer in focus. This would enable our team at SignEasy to visualize the product and gauge the progress. Alternatively, this would also be an example to our clients willing to try out our API platforms
+## Usage 
+You can find the app available at https://himalaya.getsigneasy.com
 
-## Installation
 
+## Build Instructions 
 **Install HomeBrew**
 
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)```
