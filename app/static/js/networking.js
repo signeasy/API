@@ -117,7 +117,7 @@ var NetworkingModule = (function(){
             UserModule.setAccessToken("");
             UserModule.setRefreshToken("");
             HomeModule.setUserToken();
-            alert('You have been logged out. Please login');
+            alert('You have not authorized the app or you have revoked the permissions.');
         }
     }
 
