@@ -100,7 +100,7 @@ def upload():
     server_error = {'status_code':500};
     if request.method == 'POST':
         header_token = request.headers.get('Authorization')
-        url = 'https://rest-beta.getsigneasy.com/v1/files/original/'
+        url = 'https://api-ext.getsigneasy.com/v1/files/original/'
         headers = {'Authorization': header_token}
         data = request.form
         files = {'file': open(os.path.join(APP_STATIC, 'doc/form4.pdf'), 'rb')}
