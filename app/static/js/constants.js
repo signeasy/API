@@ -1,13 +1,13 @@
 var ConstantModule = (function(){
 
-    var AUTH_HOST = "https://rest-beta.getsigneasy.com";//SignEasy API host
+    var AUTH_HOST = "https://api-ext.getsigneasy.com";//SignEasy API host
     var APP_HOST = "https://himalaya.getsigneasy.com";//Your app host
     var AUTH_AUTHORIZE = "/oauth2/authorize";
     var AUTH_TOKEN = "/oauth2/token";
-    var CLIENT_ID = "tgS7yWPRDL5ROrFg8BN74XeDxi4k8zYMrN4pMT6U";//"qZOC4pkLbmE5644wG1z95W41djqXcZRkAGJDuquF";//Add your client ID;
-    var CLIENT_SECRET = "l41sSbtzqyACMbyQYe2z4KqQREBaStBhFBLX8fyu5s2zcNlS6k";//"b3ZRR29H09iacwMjCbxfmmVecHFv7GQRQviS1IlxA027d8oMNi";//Add your client Secret;
+    var CLIENT_ID = "4V82IhI149OX5zyBMcYvnTq9vD9FXpS2sV9XK2ec";//"qZOC4pkLbmE5644wG1z95W41djqXcZRkAGJDuquF";//Add your client ID;
+    var CLIENT_SECRET = "hH5N09kt9QelP9gCONMzHbPHA6QjQUT625yjoFdeZsEfq6Zfrk";//"b3ZRR29H09iacwMjCbxfmmVecHFv7GQRQviS1IlxA027d8oMNi";//Add your client Secret;
     var AUTH_REDIRECT_URI = APP_HOST+"/redirect";
-    var SCOPE = "pending:read original:read original:create original:update original:download webapp:window";
+    var SCOPE = "original:create signed:create";
     var AUTHORIZATION_CODE;
 
     var URL_AUTHORIZE = AUTH_HOST + AUTH_AUTHORIZE + "?" + "response_type=code&"
