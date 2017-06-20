@@ -78,6 +78,8 @@ button {
     display: inline-block;
     border-radius: 4px;
     font-size: 16px;
+    cursor: pointer;
+    cursor: hand;
 }
 
 button:disabled,
