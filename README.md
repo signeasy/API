@@ -9,6 +9,7 @@ The API enables you to -
  * Download your original and signed documents
  * Take actions on your pending signature requests 
  * Check status of your pending signature requests 
+ * Be notified about changes to your signature requests and documents 
 
 ## Getting Started
 The API platform is currently in beta. Go here for the complete [API documentation](https://github.com/signeasy/API/wiki), including Authentication and Webhooks. 
