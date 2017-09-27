@@ -11,9 +11,9 @@ The API enables you to -
  * Check status of your pending signature requests 
 
 ## Getting Started
-The API platform is currently in beta. If you are interested in using the APIs for your application on production, please reach out to us [here](http://lp.getsigneasy.com/api-request/) and you will receive priority technical assistance for your integrations. 
+The API platform is currently in beta. Go here for the complete [API documentation](https://github.com/signeasy/API/wiki), including Authentication and Webhooks. 
 
-Go here for the complete [API documentation](https://github.com/signeasy/API/wiki), including Authentication and Webhooks. 
+If you are interested in using the APIs for your application on production, please reach out to us [here](http://lp.getsigneasy.com/api-request/) and you will receive priority technical assistance for your integrations. 
 
 ## Contact 
 
