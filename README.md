@@ -13,9 +13,7 @@ The API enables you to -
 ## Getting Started
 The API platform is currently in beta. If you are interested in using the APIs for your application on production, please reach out to us [here](http://lp.getsigneasy.com/api-request/) and you will receive priority technical assistance for your integrations. 
 
-This document contains details on how to get started with integrating the APIs before you take it to production. 
-
-**Next:** [API Endpoints](https://github.com/signeasy/Himalaya-Doc-Writer/wiki/API-Endpoints)
+Go here for the complete [API documentation](https://github.com/signeasy/API/wiki), including Authentication and Webhooks. 
 
 ## Contact 
 
