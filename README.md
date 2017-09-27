@@ -23,7 +23,8 @@ This document contains details on how to get started with integrating the APIs b
 2. Technical Assistance: support@getsigneasy.com
 3. Sales Enquiries: sales@getsigneasy.com
 
-###
+***
+
 
 ## Sample App (Himalaya Doc Writer) 
 
