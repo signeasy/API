@@ -237,18 +237,18 @@ var HomeModule = (function() {
     function onOpenInWebapp(){
         closeModal();
         if(fileId){
-            var popWindow = popupCenter('', 'Sign With SignEasy', 1280, 800);//window.open('', '_blank');
-            popWindow.onload = function () {
-                popWindow.document.write('Loading preview...');
-            };
+            // var popWindow = popupCenter('', 'Sign With SignEasy', 1280, 800);//window.open('', '_blank');
+            // popWindow.onload = function () {
+            //     popWindow.document.write('Loading preview...');
+            // };
             NetworkingModule.postv1(ConstantModule.getSigningUrl(),function(resp,err){
                 if(!err){
                     var signingResp = JSON.parse(resp);
                     console.log(signingResp.url);
-                    popWindow.location.href = signingResp.url;
+                    //popWindow.location.href = signingResp.url;
                 } else {
                     alert(err);
-                    popWindow.document.write('Something went wrong');
+                    //popWindow.document.write('Something went wrong');
                 }
 
             },onOpenInWebapp,"file_id="+fileId);
