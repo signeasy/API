@@ -48,7 +48,7 @@ var ConstantModule = (function(){
     }
 
     function getSigningUrl(){
-        return AUTH_HOST + "/v1/signing/url/";
+        return AUTH_HOST + "/v2/signing/url/";
     }
 
     function getWebappUrl() {
